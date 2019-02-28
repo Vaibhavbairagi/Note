@@ -1,0 +1,45 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:id="@+id/card"
+    android:elevation="10dp"
+    app:cardBackgroundColor="@color/White">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:paddingStart="10dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="10dp"
+            android:textSize="17sp"
+            android:layout_marginStart="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Black" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

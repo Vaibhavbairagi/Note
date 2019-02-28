@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".EditorActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/editortoolbar"
+        app:titleTextColor="@color/White"
+        android:elevation="8dp"
+        android:background="@color/Yellow2"
+        app:title="Note" />
+
+    <EditText
+        android:id="@+id/notecontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:paddingStart="20dp"
+        android:hint="Note"
+        android:backgroundTint="@color/transparent"
+        android:layout_below="@+id/edittitle"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edittitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        android:textColor="@color/Black"
+        android:backgroundTint="@color/transparent"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/editortoolbar"
+        android:hint="Title"
+        android:ems="10"
+        android:inputType="textPersonName|textEmailAddress"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/donebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/ic_done_black_24dp"
+        app:backgroundTint="@color/Yellow2"
+        app:fabSize="normal"
+        app:layout_anchorGravity="right|bottom" />
+</RelativeLayout>
